@@ -12,11 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # Android SDK এর root path (ubuntu runner-এ এটাই default)
-      ANDROID_HOME: /usr/local/lib/android/sdk
-      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
       # Gradle যেন বেশি memory না চায় (CI-তে OOM এড়াতে)
       GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2 -Xmx2g"
+
 
     steps:
       # ১. কোড checkout
@@ -31,20 +29,15 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      # ৩. Android SDK packages ইনস্টল ও licenses accept
+      # ৩. Android SDK setup ও licenses accept
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          packages: |
-            tools
-            platform-tools
-            platforms;android-35
-            build-tools;35.0.0
+        uses: android-actions/setup-android@v4
+
 
       # ৪. local.properties ফাইল তৈরি (SDK path সহ)
       - name: Create local.properties
         run: |
-          echo "sdk.dir=/usr/local/lib/android/sdk" > local.properties
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
           echo "✅ local.properties created"
           cat local.properties
 
