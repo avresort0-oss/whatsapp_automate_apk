@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WhatsApp Automator</string>
+    <string name="accessibility_service_description">Automates scrolling through WhatsApp chats, finding specific contacts, and opening their chats to perform quick replies with pre-selected messages and image attachments.</string>
+</resources>

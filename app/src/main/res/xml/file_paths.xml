@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Internal files directory (where ImageAttachmentHelper saves images) -->
+    <files-path name="quick_reply_images" path="quick_reply_images/" />
+
+    <!-- External storage for WhatsApp media folder access -->
+    <external-path name="whatsapp_media" path="WhatsApp/Media/" />
+
+    <!-- Cache directory (if needed) -->
+    <cache-path name="cache" path="." />
+</paths>

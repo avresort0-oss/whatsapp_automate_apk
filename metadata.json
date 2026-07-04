@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp Automator",
+  "description": "Automate WhatsApp contact scrolling, contact searching, chat opening, and sending quick replies with image selection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

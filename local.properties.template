@@ -1,0 +1,24 @@
+# =========================================================================
+# local.properties - এই ফাইলটি Android SDK এর location বলে দেয়
+# =========================================================================
+#
+# এই ফাইলটিকে "local.properties" নামে rename করুন (template শব্দটি মুছে দিন)
+# তারপর নিচের লাইনে আপনার Android SDK এর path বসান।
+#
+# Windows এ সাধারণত:
+#   sdk.dir=C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
+#
+# Mac এ সাধারণত:
+#   sdk.dir=/Users/YourName/Library/Android/sdk
+#
+# Linux এ সাধারণত:
+#   sdk.dir=/home/YourName/Android/Sdk
+#
+# ⚠️ Windows এ backslash দুইবার দিতে হবে (\\)
+# ⚠️ "YourName" এর জায়গায় আপনার PC এর username বসান
+# =========================================================================
+
+sdk.dir=PASTE_YOUR_SDK_PATH_HERE
+
+# উদাহরণ (Windows):
+# sdk.dir=C\:\\Users\\John\\AppData\\Local\\Android\\Sdk
